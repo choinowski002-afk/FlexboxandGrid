@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox vs Grid</title>
+  <style>
 
+    /* --- FLEXBOX: lays items out in a single row --- */
+    .flex-container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .flex-item {
+      background: lightblue;
+      padding: 20px;
+      flex: 1;
+    }
+
+    /* --- CSS GRID: arranges items in rows AND columns --- */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 40px;
+    }
+
+    .grid-item {
+      background: lightgreen;
+      padding: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2>Flexbox Example - Navigation Bar</h2>
+  <div class="flex-container">
+    <div class="flex-item">Home</div>
+    <div class="flex-item">About</div>
+    <div class="flex-item">Contact</div>
+  </div>
+
+  <h2>CSS Grid Example - Card Grid</h2>
+  <div class="grid-container">
+    <div class="grid-item">Card 1</div>
+    <div class="grid-item">Card 2</div>
+    <div class="grid-item">Card 3</div>
+    <div class="grid-item">Card 4</div>
+    <div class="grid-item">Card 5</div>
+    <div class="grid-item">Card 6</div>
+  </div>
+
+</body>
+</html>
